@@ -27,10 +27,10 @@ def verification_adn(chaine_adn: str):
         return False
 
 def saisie_adn(texte :str):
-    chaine_adn = str(input("Donner moi une "+texte+" adn : "))
+    chaine_adn = str(input("Donnez moi une "+texte+" adn : "))
     resultat = verification_adn(chaine_adn)
     while resultat == False:
-        chaine_adn = str(input("Donner moi une "+texte+" adn : "))
+        chaine_adn = str(input("Donnez moi une "+texte+" adn : "))
         resultat = verification_adn(chaine_adn)
     return chaine_adn
         
